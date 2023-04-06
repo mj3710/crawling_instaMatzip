@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba4ab971f911273f18018187fcc1caf5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba4ab971f911273f18018187fcc1caf5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba4ab971f911273f18018187fcc1caf5 = L.map(
+                "map_ba4ab971f911273f18018187fcc1caf5",
+                {
+                    center: [33.3625, 126.533694],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c91e8aa0f91fe8ae25b61b04d9aa5e6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba4ab971f911273f18018187fcc1caf5);
+        
+    
+            var marker_cluster_c0b6f65474de4788e8a3099aae58d1e9 = L.markerClusterGroup(
+                {}
+            );
+            marker_cluster_c0b6f65474de4788e8a3099aae58d1e9.options.iconCreateFunction =
+                function(cluster){
+                return L.divIcon({
+                    html:'<b>' + cluster.getChildCount() + '</b>',
+                    className: 'marker-cluster marker-cluster-large',
+                    iconsize: new L.Point(30,30)
+                });
+            };
+            map_ba4ab971f911273f18018187fcc1caf5.addLayer(marker_cluster_c0b6f65474de4788e8a3099aae58d1e9);
+        
+    
+            var marker_a096a84c20e102ce80f9c47193755f58 = L.marker(
+                [33.4591349705437, 126.940537521366],
+                {}
+            ).addTo(marker_cluster_c0b6f65474de4788e8a3099aae58d1e9);
+        
+    
+        var popup_e97bb91b237ae235c974d5babf9f1904 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401acc541b236974bc008fb84d3ba72c = $(`<div id="html_401acc541b236974bc008fb84d3ba72c" style="width: 100.0%; height: 100.0%;">성산일출봉</div>`)[0];
+                popup_e97bb91b237ae235c974d5babf9f1904.setContent(html_401acc541b236974bc008fb84d3ba72c);
+            
+        
+
+        marker_a096a84c20e102ce80f9c47193755f58.bindPopup(popup_e97bb91b237ae235c974d5babf9f1904)
+        ;
+
+        
+    
+    
+            var marker_1eccbe5185e957683735ec42e01274c5 = L.marker(
+                [33.3923943499305, 126.799736504313],
+                {}
+            ).addTo(marker_cluster_c0b6f65474de4788e8a3099aae58d1e9);
+        
+    
+        var popup_204d6d6a4a10e29243a8eed2e7f9ec1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf0aa7db42ec7e7116c0b3cd6708ff97 = $(`<div id="html_cf0aa7db42ec7e7116c0b3cd6708ff97" style="width: 100.0%; height: 100.0%;">성읍탐라식당</div>`)[0];
+                popup_204d6d6a4a10e29243a8eed2e7f9ec1f.setContent(html_cf0aa7db42ec7e7116c0b3cd6708ff97);
+            
+        
+
+        marker_1eccbe5185e957683735ec42e01274c5.bindPopup(popup_204d6d6a4a10e29243a8eed2e7f9ec1f)
+        ;
+
+        
+    
+    
+            var marker_4224ee039cb8b22b2b17c48427e0e99f = L.marker(
+                [33.5070789578184, 126.492769004244],
+                {}
+            ).addTo(marker_cluster_c0b6f65474de4788e8a3099aae58d1e9);
+        
+    
+        var popup_4c8e4c640efa0cfd9cdd0160ebeebaa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e242e26a1630c6223d51df32261594a = $(`<div id="html_6e242e26a1630c6223d51df32261594a" style="width: 100.0%; height: 100.0%;">제주국제공항</div>`)[0];
+                popup_4c8e4c640efa0cfd9cdd0160ebeebaa1.setContent(html_6e242e26a1630c6223d51df32261594a);
+            
+        
+
+        marker_4224ee039cb8b22b2b17c48427e0e99f.bindPopup(popup_4c8e4c640efa0cfd9cdd0160ebeebaa1)
+        ;
+
+        
+    
+    
+            var marker_a836c9ab5394f75894b0c63a5e355249 = L.marker(
+                [33.5430615661113, 126.669238934013],
+                {}
+            ).addTo(marker_cluster_c0b6f65474de4788e8a3099aae58d1e9);
+        
+    
+        var popup_de5ba67c78ca8aa23264fab8b138fdf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aae95cf8bba439279dd6f75f77d42da1 = $(`<div id="html_aae95cf8bba439279dd6f75f77d42da1" style="width: 100.0%; height: 100.0%;">함덕해수욕장</div>`)[0];
+                popup_de5ba67c78ca8aa23264fab8b138fdf6.setContent(html_aae95cf8bba439279dd6f75f77d42da1);
+            
+        
+
+        marker_a836c9ab5394f75894b0c63a5e355249.bindPopup(popup_de5ba67c78ca8aa23264fab8b138fdf6)
+        ;
+
+        
+    
+    
+            var layer_control_f3c81bce5c18127516ce6fb10c311336 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5c91e8aa0f91fe8ae25b61b04d9aa5e6,
+                },
+                overlays :  {
+                    "Jeju" : marker_cluster_c0b6f65474de4788e8a3099aae58d1e9,
+                },
+            };
+            L.control.layers(
+                layer_control_f3c81bce5c18127516ce6fb10c311336.base_layers,
+                layer_control_f3c81bce5c18127516ce6fb10c311336.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ba4ab971f911273f18018187fcc1caf5);
+        
+</script>
+</html>
